@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta haracter="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial">
+        <title>
+            Document
+        </title>
+        <style>
+
+            img{
+                height:100px;
+                display:block;
+                background-color: black;
+            }
+            input:checked ~ .c1{
+                transform: translateX(400px);
+                transition-duration: 2s;
+                transition-timing-function: ease-in;
+            }
+            input:checked ~ .c2{
+                transform: translateX(400px);
+                transition-duration: 5s;
+                transition-timing-function: ease-in-out;
+            }
+            input:checked ~ .c3{
+                transform: translateX(400px);
+                transition-duration: 4s;
+                transition-timing-function: ease-out;
+            }
+
+        </style>
+
+    </head>
+    <body>
+<input type="radio">start
+ 
+<img src="./running.png" class="c1">
+<img src="./running.png" class="c2">
+<img src="./running.png" class="c3">
+    </body>
+</html>
